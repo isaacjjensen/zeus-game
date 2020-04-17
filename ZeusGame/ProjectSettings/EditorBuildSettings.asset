@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Transitions/SplashPage.unity
+    guid: f2dcd8f846bae254d9f87cbe87a124b8
+  - enabled: 1
+    path: Assets/Scenes/Menus/MainMenu.unity
+    guid: 0e966695b8b427e40b959c15a30585b4
+  - enabled: 1
+    path: Assets/Scenes/Transitions/Introduction.unity
+    guid: 06a122df005877d4f855116d30af3ac8
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level1.unity
+    guid: 0a462a40922666b49aad77f5b65d662c
+  - enabled: 1
+    path: Assets/Scenes/Menus/ScoreBoard1.unity
+    guid: 192f82c147a44534fbf87d6aea064527
+  - enabled: 1
+    path: Assets/Scenes/Transitions/Transition.unity
+    guid: 85584172115b50d4e98cbe8ef48f3439
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: f8509fe0ab6513e4794fa567fb5032b4
+  - enabled: 1
+    path: Assets/Scenes/Transitions/Ending.unity
+    guid: 29354658357700d43a8ca1182fba6c71
+  - enabled: 1
+    path: Assets/Scenes/Menus/ScoreBoard2.unity
+    guid: 375d211626999754a99e2e1f25655dd9
+  - enabled: 1
+    path: Assets/Scenes/Levels/TeleportPuzzle.unity
+    guid: 576d928d7d7af4a4b9e2e00e0a49a221
+  - enabled: 1
+    path: Assets/Scenes/Levels/iceCave.unity
+    guid: 1a12e12c6ffe5694a8126076e21b1074
+  - enabled: 1
+    path: Assets/Scenes/Levels/TimeTrialLevel.unity
+    guid: 1843d55179fbaa445bb94f9417d6203f
+  - enabled: 1
+    path: Assets/Scenes/Test/Hub.unity
+    guid: 568af291644e94f469c89872341e1d36
+  - enabled: 1
+    path: Assets/Scenes/Levels/level3Hub.unity
+    guid: 54979f2f89c7ec94a99ff2bb03bd7447
+  - enabled: 1
+    path: Assets/Scenes/Transitions/endScene.unity
+    guid: 26885258f0ab3264cadadf9f3c7fe753
+  m_configObjects: {}
