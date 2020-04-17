@@ -29,7 +29,7 @@ public abstract class Carriable : Interactable {
 			joint.connectedBody = interactor.GetComponent<Rigidbody>();
 			joint.anchor = Vector3.zero;
 			joint.connectedAnchor = Vector3.zero;
-			joint.spring = 10000;
+			joint.spring = 99999999;
 			joint.damper = 0;
 			joint.maxDistance = 0;
 			isBeingCarried = true;
