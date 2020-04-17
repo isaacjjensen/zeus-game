@@ -9,7 +9,6 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-/[Zz]eus_Data/
 
 # As we add Assets from the Unity Asset Store, make sure to add them here
 # to avoid going over the 2.0 GB limit on file size on BitBucket
@@ -30,6 +29,7 @@
 /[Aa]ssets/Rocks and Boulders 2/
 /[Aa]ssets/RPG_FPS_game_assets_industrial/
 /[Aa]ssets/TheGamingPeople/
+/[Aa]ssets/Sci-Fi Styled Modular Pack/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
