@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transitions/endScene.unity
     guid: 26885258f0ab3264cadadf9f3c7fe753
+  - enabled: 1
+    path: Assets/Scenes/Levels/ForestClearing.unity
+    guid: ea1ddab97e1222c4c9b6d3384be68a0e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Timeworn.unity
+    guid: 476c474c32cfda24792a3a83538704ea
   m_configObjects: {}

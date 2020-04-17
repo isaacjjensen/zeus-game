@@ -30,6 +30,7 @@ public class ThirdLevelKey : Interactable
         switch (levelName)
         {
             case "TimeTrialLevel":
+            case "Timeworn":
                 KeyManager.timeKeyCollected = true;
                 break;
             case "iceCave":
@@ -43,6 +44,6 @@ public class ThirdLevelKey : Interactable
     
     private void TeleportToHub()
     {
-        SceneManager.LoadScene("level3Hub");
+        SceneManager.LoadScene("ForestClearing");
     }
 }
