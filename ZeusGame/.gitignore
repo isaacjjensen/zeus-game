@@ -30,6 +30,10 @@
 /[Aa]ssets/RPG_FPS_game_assets_industrial/
 /[Aa]ssets/TheGamingPeople/
 /[Aa]ssets/Sci-Fi Styled Modular Pack/
+<<<<<<< HEAD
+=======
+/[Aa]ssets/Flooded_Grounds/
+>>>>>>> 8d34ad501adbc4083c2c957cf47fbc910387b2d9
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
