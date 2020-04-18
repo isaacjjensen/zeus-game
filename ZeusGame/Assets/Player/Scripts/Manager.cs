@@ -43,7 +43,10 @@ public class Manager : MonoBehaviour
         // Interaction
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hitInfo, interactDistance, interactableLayerMask))
         {
-            hitInfo.collider.gameObject.GetComponent<Interactable>().OnHover();
+            if (hitInfo.collider.gameObject != null)
+            {
+                hitInfo.collider.gameObject.GetComponent<Interactable>().OnHover();
+            }
 
             if (lastHoveredGameObject != null && hitInfo.collider.gameObject != lastHoveredGameObject)
             {

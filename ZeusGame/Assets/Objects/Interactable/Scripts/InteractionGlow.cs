@@ -11,7 +11,7 @@ public class InteractionGlow : MonoBehaviour {
     private void Start() {
         rend = GetComponentInChildren<Renderer>();
         rend.enabled = true;
-        rend.sharedMaterial = material[0];
+        //rend.sharedMaterial = material[0];
     }
     void OnMouseOver() {
         rend.sharedMaterial = material[1];

@@ -54,6 +54,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/ForestClearing.unity
     guid: ea1ddab97e1222c4c9b6d3384be68a0e
   - enabled: 1
-    path: Assets/Scenes/Levels/Timeworn.unity
+    path: Assets/Scenes/Levels/TimewornVillage.unity
     guid: 476c474c32cfda24792a3a83538704ea
   m_configObjects: {}

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8351272245753542038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.619
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.23067823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9730301
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 26.674002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502964933939944458, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326770912102029637, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: text
+      value: Pull the lever and see what happens!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792482962567147033, guid: 2d6a1e90a9b51e34ea97a746875b9ab4,
+        type: 3}
+      propertyPath: m_Name
+      value: book_prefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d6a1e90a9b51e34ea97a746875b9ab4, type: 3}

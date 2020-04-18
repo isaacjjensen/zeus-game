@@ -22,11 +22,11 @@ public class MoveWalls : MonoBehaviour {
         {
             if (gameObject.name == "Left")
             {
-                transform.position -= new Vector3(velocity * Time.deltaTime, 0, 0);
+                transform.position += new Vector3(0, 0, velocity * Time.deltaTime);
             }
             else if (gameObject.name == "Right")
             {
-                transform.position += new Vector3(velocity * Time.deltaTime, 0, 0);
+                transform.position -= new Vector3(0, 0, velocity * Time.deltaTime);
             }
         }
         else if (!DeathManagerTimeTrial.wallsBeMoving)

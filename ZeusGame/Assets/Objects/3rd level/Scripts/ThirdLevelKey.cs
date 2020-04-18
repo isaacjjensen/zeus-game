@@ -30,7 +30,7 @@ public class ThirdLevelKey : Interactable
         switch (levelName)
         {
             case "TimeTrialLevel":
-            case "Timeworn":
+            case "TimewornVillage":
                 KeyManager.timeKeyCollected = true;
                 break;
             case "iceCave":
