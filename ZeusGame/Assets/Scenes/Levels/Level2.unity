@@ -21452,6 +21452,10 @@ PrefabInstance:
       propertyPath: sensitivityY
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 3}
       propertyPath: interactDistance
       value: 3.25
