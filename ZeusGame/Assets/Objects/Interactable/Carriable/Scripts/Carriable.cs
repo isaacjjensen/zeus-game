@@ -6,7 +6,7 @@ using System.Collections;
 [RequireComponent (typeof(Rigidbody))]
 public abstract class Carriable : Interactable {
 	public bool isBeingCarried = false;
-	SpringJoint joint;
+	FixedJoint joint;
 
     void Update()
     {
@@ -16,7 +16,7 @@ public abstract class Carriable : Interactable {
             isBeingCarried = false;
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             GetComponent<Collider>().isTrigger = false;
-            GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * 20, ForceMode.Impulse);
+            GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * 20, ForceMode.VelocityChange);
         }
     }
 	public override void Interact(Transform interactor)
@@ -24,14 +24,11 @@ public abstract class Carriable : Interactable {
 		if (!isBeingCarried)
 		{
 			GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-			joint = gameObject.AddComponent<SpringJoint>();
+			joint = gameObject.AddComponent<FixedJoint>();
 			joint.autoConfigureConnectedAnchor = false;
 			joint.connectedBody = interactor.GetComponent<Rigidbody>();
 			joint.anchor = Vector3.zero;
 			joint.connectedAnchor = Vector3.zero;
-			joint.spring = 99999999;
-			joint.damper = 0;
-			joint.maxDistance = 0;
 			isBeingCarried = true;
 			GetComponent<Collider>().isTrigger = true;
 		}

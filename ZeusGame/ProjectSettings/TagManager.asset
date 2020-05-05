@@ -37,6 +37,7 @@ TagManager:
   - PW - Nature
   - Synty Medium Farm
   - Synty Small Farm
+  - dart
   layers:
   - Default
   - TransparentFX
