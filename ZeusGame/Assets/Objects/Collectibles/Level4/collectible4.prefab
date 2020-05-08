@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2310907981435010535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8510632727539295850}
-  m_Layer: 0
-  m_Name: Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8510632727539295850
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2310907981435010535}
-  m_LocalRotation: {x: -0.16907576, y: -0.75588036, z: -0.27217135, w: 0.5709475}
-  m_LocalPosition: {x: -0.9165956, y: 2.3546941, z: 1.4623816}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3823479236290095989}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3378662916787047537
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3823479236290095989}
-  m_Layer: 0
+  - component: {fileID: 3407125055590936480}
+  - component: {fileID: 84003027430694716}
+  m_Layer: 8
   m_Name: collectible4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,42 +29,39 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
-  - {fileID: 8510632727539295850}
-  - {fileID: 51392996759640994}
   - {fileID: 2248573434064769488}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8467232245382319823
-GameObject:
+--- !u!136 &3407125055590936480
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 51392996759640994}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &51392996759640994
-Transform:
+  m_GameObject: {fileID: 3378662916787047537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.00956
+  m_Height: 5.6746545
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.033232767, z: -0.022154648}
+--- !u!114 &84003027430694716
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8467232245382319823}
-  m_LocalRotation: {x: 0.19933333, y: -0.8766695, z: -0.28442326, w: 0.33289677}
-  m_LocalPosition: {x: -1.1205287, y: 6.306527, z: 4.56479}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3823479236290095989}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 3378662916787047537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e9fa0f4c4f6144696f6759f72e67a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 0, b: 0, a: 0}
+  materials: []
+  type: 3
 --- !u!1 &8863913410549207697
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +73,7 @@ GameObject:
   - component: {fileID: 2248573434064769488}
   - component: {fileID: 1779957263827303406}
   - component: {fileID: 5912803245096908217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +92,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3823479236290095989}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1779957263827303406
 MeshFilter:

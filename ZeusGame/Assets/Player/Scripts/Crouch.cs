@@ -13,6 +13,7 @@ public class Crouch : MonoBehaviour
     private Transform transformPlayer;
     private float distanceToGround;
     private float pace = 10;
+    private float defaultScale;
 
     // Use this for initialization
     void Start()
@@ -20,17 +21,18 @@ public class Crouch : MonoBehaviour
         CharacterController player = GetComponent<CharacterController>(); /*Needed to get height of player */
         transformPlayer = transform; /* Will allow me to modify players position and scale */
         distanceToGround = player.height / 2;
+        defaultScale = transformPlayer.localScale.y;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        float scale = 1.0f; //Default scale of the player
+        float scale = defaultScale; //Default scale of the player
 
         if (Input.GetButton("Crouch")) //If crouch button is pressed, the scale will be set to 1/2 of original
         {
-            scale = 0.5f;
+            scale = 0.5f * defaultScale;
         }
         float currentScale = transformPlayer.localScale.y; //Get the current scale of the player
 

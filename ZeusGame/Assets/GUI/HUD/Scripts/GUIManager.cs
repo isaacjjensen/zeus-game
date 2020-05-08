@@ -6,11 +6,12 @@ using TMPro;
 
 public class GUIManager : MonoBehaviour
 {
-    private ToolInventoryManager toolInventoryManager;
+    private CollectibleManager collectibleManager;
     private EquippedToolManager equippedToolManager;
     private HandManager handManager;
     private HintManager hintManager;
     private InventoryTabManager inventoryTabManager;
+    private ToolInventoryManager toolInventoryManager;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,10 @@ public class GUIManager : MonoBehaviour
             print("ERROR: HUD hierarchy has changed, could not find Hint Text or it no longer has the HintManager script attached.");
         }
         if (!findAndSetInventoryTabManager())
+        {
+            print("ERROR: HUD hierarchy has changed, could not find Hint Text or it no longer has the HintManager script attached.");
+        }
+        if (!findAndSetCollectibleManager())
         {
             print("ERROR: HUD hierarchy has changed, could not find Hint Text or it no longer has the HintManager script attached.");
         }
@@ -77,6 +82,15 @@ public class GUIManager : MonoBehaviour
         return hintManager != null;
     }
 
+    private bool findAndSetCollectibleManager()
+    {
+        collectibleManager = gameObject.transform.Find("InventoryPanel")
+                                    .transform.Find("InventorySubpanel")
+                                    .transform.Find("CollectiblesSuperPanel")
+                                    .transform.Find("CollectiblesPanel").GetComponent<CollectibleManager>();
+        return collectibleManager != null;
+    }
+
     public ToolInventoryManager getToolInventoryManager()
     {
         return toolInventoryManager;
@@ -100,5 +114,15 @@ public class GUIManager : MonoBehaviour
     public InventoryTabManager getInventoryTabManager()
     {
         return inventoryTabManager;
+    }
+
+    public CollectibleManager getCollectibleManager()
+    {
+        print("Yeet, mutha fucka");
+        if (collectibleManager == null)
+        {
+            print("Oooof");
+        }
+        return collectibleManager;
     }
 }

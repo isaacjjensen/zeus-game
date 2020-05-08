@@ -15,7 +15,7 @@ public class InventoryTabManager : MonoBehaviour
     private bool initialized = false;
     private GameObject[] headerTexts = new GameObject[3];
     private GameObject[] inventoryPanels = new GameObject[3];
-    private InventoryTab currentTab = InventoryTab.TOOLS;
+    private InventoryTab currentTab;
 
     void Start()
     {

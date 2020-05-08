@@ -70,7 +70,18 @@ public class Manager : MonoBehaviour
         // Inventory
         if (Input.GetButtonDown("Inventory"))
         {
-            ToggleInventoryWindow();
+            ToggleInventoryWindow(InventoryTabManager.InventoryTab.TOOLS);
+
+        }
+        if (Input.GetButtonDown("Collectibles"))
+        {
+            ToggleInventoryWindow(InventoryTabManager.InventoryTab.COLLECTIBLES);
+
+        }
+        if (Input.GetButtonDown("Notes"))
+        {
+            ToggleInventoryWindow(InventoryTabManager.InventoryTab.NOTES);
+
         }
 
         // Hand & Tool HUD and animation management
@@ -81,9 +92,16 @@ public class Manager : MonoBehaviour
         if (HUD.GetComponent<GUIManager>().getHandManager().isHoldingTool())
         {
             HUD.GetComponent<GUIManager>().getHandManager().getEquippedTool().updateAnimation(motor);
-            if (Input.GetButtonDown("Fire1") && !inventoryShowing && !playerCamera.GetComponent<menuPause>().IsGamePaused())
+            if (Input.GetButtonDown("Fire1") && !inventoryShowing)// && !playerCamera.GetComponent<menuPause>().IsGamePaused())
             {
                 HUD.GetComponent<GUIManager>().getHandManager().getEquippedTool().action();
+            }
+            if (Input.GetButtonUp("Fire1") && !inventoryShowing)// && !playerCamera.GetComponent<menuPause>().IsGamePaused())
+            {
+                if (HUD.GetComponent<GUIManager>().getHandManager().getEquippedTool() is HeatRay)
+                {
+                    ((HeatRay)HUD.GetComponent<GUIManager>().getHandManager().getEquippedTool()).stopFiring();
+                }
             }
         }
 
@@ -108,7 +126,7 @@ public class Manager : MonoBehaviour
         return inventoryShowing;
     }
 
-    public void ToggleInventoryWindow()
+    public void ToggleInventoryWindow(InventoryTabManager.InventoryTab tab)
     {
         inventoryShowing = !inventoryShowing;
         inventoryPanel.SetActive(inventoryShowing);
@@ -120,6 +138,18 @@ public class Manager : MonoBehaviour
             HUD.GetComponent<GUIManager>().getInventoryTabManager().Load();
             HUD.GetComponent<GUIManager>().getToolInventoryManager().LoadSelectedTool();
             HUD.GetComponent<GUIManager>().getEquippedToolManager().loadEquippedTool();
+            switch (tab)
+            {
+                case InventoryTabManager.InventoryTab.TOOLS:
+                    HUD.GetComponent<GUIManager>().getInventoryTabManager().ChangeTab((int)InventoryTabManager.InventoryTab.TOOLS);
+                    break;
+                case InventoryTabManager.InventoryTab.COLLECTIBLES:
+                    HUD.GetComponent<GUIManager>().getInventoryTabManager().ChangeTab((int)InventoryTabManager.InventoryTab.COLLECTIBLES);
+                    break;
+                case InventoryTabManager.InventoryTab.NOTES:
+                    HUD.GetComponent<GUIManager>().getInventoryTabManager().ChangeTab((int)InventoryTabManager.InventoryTab.NOTES);
+                    break;
+            }
         } else
         {
             HUD.GetComponent<GUIManager>().getToolInventoryManager().UnloadSelectedTool();

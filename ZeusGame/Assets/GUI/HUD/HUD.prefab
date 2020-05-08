@@ -223,7 +223,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &692412207119787638
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 4801144617989516960}
   - component: {fileID: 3738203165493581576}
   - component: {fileID: 7758542306816437476}
+  - component: {fileID: 462857441548051950}
   m_Layer: 5
   m_Name: Collectible (3)
   m_TagString: Untagged
@@ -587,6 +588,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &462857441548051950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865322824832291985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Frozen Cavern
+  totalCount: 22
+  type: 3
+  image: {fileID: 21300000, guid: 37c83a9f380450f43ac4943092dad9ac, type: 3}
 --- !u!1 &966483002502364404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,6 +1908,7 @@ GameObject:
   - component: {fileID: 5005478344955294961}
   - component: {fileID: 8717149681419396505}
   - component: {fileID: 6567336793642264173}
+  - component: {fileID: 3058683046595065465}
   m_Layer: 5
   m_Name: Collectible (1)
   m_TagString: Untagged
@@ -1956,6 +1974,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3058683046595065465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114333352208280984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Ancient Ruins II
+  totalCount: 22
+  type: 1
+  image: {fileID: 21300000, guid: 0b48d12cf9b7a2042b4fd345e4594632, type: 3}
 --- !u!1 &2168934879803789768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,6 +2259,7 @@ GameObject:
   - component: {fileID: 5405586509416728450}
   - component: {fileID: 1930904262406459337}
   - component: {fileID: 3418110428184728235}
+  - component: {fileID: 371681328684408364}
   m_Layer: 5
   m_Name: Collectible (5)
   m_TagString: Untagged
@@ -2290,6 +2325,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &371681328684408364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2719587240829483146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Space-Torn Station
+  totalCount: 22
+  type: 5
+  image: {fileID: 21300000, guid: c4b46a2e08814194a96e6306b59d85cb, type: 3}
 --- !u!1 &2721042038886440088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,7 +2526,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Forest Clearing
+  m_Text: 
 --- !u!1 &2983876108458331568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +2603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Frozen Cavern
+  m_Text: 
 --- !u!1 &3043491374194075162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,7 +2680,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &3271107062938955333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2757,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &3579392352274639474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,7 +3107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &3825030111781910891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,7 +3567,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Timeworn Village
+  m_Text: 
 --- !u!1 &4305228571880509713
 GameObject:
   m_ObjectHideFlags: 0
@@ -4642,10 +4693,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 145, y: -145}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6224442179181202177
 CanvasRenderer:
@@ -4818,7 +4869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ancient Runes I
+  m_Text: 
 --- !u!1 &5881626350443804844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5423,7 +5474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4067884011099687941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5631,7 +5682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Space-Torn Station
+  m_Text: 
 --- !u!1 &6408960511794459976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5816,10 +5867,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 685, y: -145}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5652717981380207446
 CanvasRenderer:
@@ -6212,7 +6263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &6800306062566828016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6297,6 +6348,7 @@ GameObject:
   - component: {fileID: 2962589664730762467}
   - component: {fileID: 5011941067562288293}
   - component: {fileID: 8628677204251938931}
+  - component: {fileID: 2121575648464181324}
   m_Layer: 5
   m_Name: Collectible
   m_TagString: Untagged
@@ -6362,6 +6414,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2121575648464181324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6882618855941095660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Ancient Ruins I
+  totalCount: 22
+  type: 0
+  image: {fileID: 21300000, guid: 4a873b405fbb22d4e9c57a8ebe996fd7, type: 3}
 --- !u!1 &7003696131337632039
 GameObject:
   m_ObjectHideFlags: 0
@@ -6475,10 +6543,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 415, y: -415}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8363910344832007653
 CanvasRenderer:
@@ -6660,6 +6728,7 @@ GameObject:
   - component: {fileID: 2488062438450053873}
   - component: {fileID: 5925893120924188464}
   - component: {fileID: 684011777854245762}
+  - component: {fileID: 6131766703774920466}
   m_Layer: 5
   m_Name: Collectible (4)
   m_TagString: Untagged
@@ -6725,6 +6794,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6131766703774920466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172539650657465988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Timeworn Village
+  totalCount: 22
+  type: 4
+  image: {fileID: 21300000, guid: ce7b02115b235e94587c8b1cb2230c1b, type: 3}
 --- !u!1 &7175531265667182110
 GameObject:
   m_ObjectHideFlags: 0
@@ -6809,6 +6894,7 @@ GameObject:
   - component: {fileID: 5236478007552850635}
   - component: {fileID: 8525554217941054416}
   - component: {fileID: 298090057023354494}
+  - component: {fileID: 8027217246376002518}
   m_Layer: 5
   m_Name: Collectible (2)
   m_TagString: Untagged
@@ -6874,6 +6960,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8027217246376002518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205177294366588315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19783dd92e99d34eb654e2e3d290bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Forest Clearing
+  totalCount: 22
+  type: 2
+  image: {fileID: 21300000, guid: 899f5333a17ac4f428bc135411ea2574, type: 3}
 --- !u!1 &7356377223811029061
 GameObject:
   m_ObjectHideFlags: 0
@@ -7548,10 +7650,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 415, y: -145}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5004791692963109144
 CanvasRenderer:
@@ -7915,10 +8017,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 955, y: -415}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4839154748484384687
 CanvasRenderer:
@@ -8164,7 +8266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 0
+  m_Text: 
 --- !u!1 &8458003243112233851
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,7 +8343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ancient Runes II
+  m_Text: 
 --- !u!1 &8480379079826467610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,10 +8771,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 955, y: -145}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4114558470836159059
 CanvasRenderer:
@@ -8931,10 +9033,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 145, y: -415}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4389532836801486129
 CanvasRenderer:
@@ -9237,6 +9339,7 @@ GameObject:
   - component: {fileID: 6038777495507379938}
   - component: {fileID: 4760429584223203570}
   - component: {fileID: 5831617471189431560}
+  - component: {fileID: 6036618938270797084}
   m_Layer: 5
   m_Name: CollectiblesPanel
   m_TagString: Untagged
@@ -9329,6 +9432,25 @@ MonoBehaviour:
   m_Spacing: {x: 18, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 6
+--- !u!114 &6036618938270797084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9030804258000997355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b007e43002f33e448434abbfda19fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectiblePanels:
+  - {fileID: 6882618855941095660}
+  - {fileID: 2114333352208280984}
+  - {fileID: 7205177294366588315}
+  - {fileID: 865322824832291985}
+  - {fileID: 7172539650657465988}
+  - {fileID: 2719587240829483146}
 --- !u!1 &9085573854522371582
 GameObject:
   m_ObjectHideFlags: 0
@@ -9438,10 +9560,10 @@ RectTransform:
   m_Father: {fileID: 4557970844166641075}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 685, y: -415}
+  m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3441175050449042642
 CanvasRenderer:

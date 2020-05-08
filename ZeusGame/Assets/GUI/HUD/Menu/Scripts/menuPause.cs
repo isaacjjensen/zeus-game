@@ -111,7 +111,7 @@ public class menuPause : MonoBehaviour
         if (GameObject.Find("Player").GetComponent<Manager>().IsInventoryShowing() 
             && (Input.GetKeyDown("escape") || Input.GetKeyDown("return") || Input.GetKeyDown("joystick button 7"))) // Close inventory window if it is up instead of pulling up menu
         {
-            GameObject.Find("Player").GetComponent<Manager>().ToggleInventoryWindow();
+            GameObject.Find("Player").GetComponent<Manager>().ToggleInventoryWindow(InventoryTabManager.InventoryTab.TOOLS);
         } else if (IsGamePaused () && (Input.GetKeyDown ("escape") || Input.GetKeyDown ("return") || Input.GetKeyDown ("joystick button 7"))) {
 			if (currentPage == Page.Controls){
 				currentPage = Page.Main;

@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tool : MonoBehaviour
+public abstract class Tool : MonoBehaviour
 {
     public Sprite boxImage;
     public Sprite circleImage;
     public string toolName;
+    public Vector3 toolPosition;
+    public Vector3 toolOrientation;
+
     private bool isBeingHeld;
 
-    public virtual void updateAnimation(CharacterMotor character)
+    public abstract void action();
+
+    // Used to differentiate animation between standing still, walking, and running
+    public void updateAnimation(CharacterMotor character)
     {
         if (character.IsWalking())
         {
@@ -27,18 +33,13 @@ public class Tool : MonoBehaviour
         }
     }
 
-    public virtual void action()
-    {
-        gameObject.GetComponent<Animator>().SetTrigger("UseTrigger");
-    }
-
-    public virtual void equip()
+    public void equip()
     {
         gameObject.SetActive(true);
         gameObject.GetComponent<Animator>().SetBool("IsEquipped", true);
     }
 
-    public virtual void unequip()
+    public void unequip()
     {
         gameObject.GetComponent<Animator>().SetBool("IsEquipped", false);
         Invoke("setInactiveIfNotSelected", 1.0f);
@@ -75,6 +76,16 @@ public class Tool : MonoBehaviour
     public string getToolName()
     {
         return toolName;
+    }
+
+    public Vector3 getPositionVector()
+    {
+        return toolPosition;
+    }
+
+    public Vector3 getOrientationVector()
+    {
+        return toolOrientation;
     }
 
     public bool isEqual(Tool inTool)
