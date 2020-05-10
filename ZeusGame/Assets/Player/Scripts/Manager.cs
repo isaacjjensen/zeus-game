@@ -56,7 +56,7 @@ public class Manager : MonoBehaviour
             {
                 lastHoveredGameObject = hitInfo.collider.gameObject;
             }
-
+            
             if (Input.GetButtonDown("Interact"))
             {
                 hitInfo.transform.gameObject.GetComponent<Interactable>().Interact(this.playerCamera.GetComponentInChildren<Rigidbody>().transform);
