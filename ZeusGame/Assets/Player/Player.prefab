@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 8200006}
   - component: {fileID: 3841635502465437755}
   - component: {fileID: 2314568174605372497}
-  - component: {fileID: 3839568189325539140}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 1
+  axes: 0
   sensitivityX: 10
   sensitivityY: 10
   minimumX: -360
@@ -171,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e610eb05daeab94589d8067466014d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DevToggle: 0
   movement:
     maxForwardSpeed: 3
     maxSprintSpeed: 6
@@ -255,8 +255,9 @@ MonoBehaviour:
   interactDistance: 3.25
   interactableLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   lastCheckpoint: {fileID: 0}
+  DevToggle: 0
 --- !u!82 &8200006
 AudioSource:
   m_ObjectHideFlags: 0
@@ -408,19 +409,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &3839568189325539140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 0}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
