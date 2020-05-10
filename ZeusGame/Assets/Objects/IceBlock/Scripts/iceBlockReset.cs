@@ -25,9 +25,9 @@ public class iceBlockReset : MonoBehaviour
 	{
 		if (Input.GetKeyUp(KeyCode.R) || Input.GetKeyDown("joystick button 3"))
 		{
-			float x = 36.33F;
-			float y = -1.631F;
-			float z = -6F;
+			float x = 35.26F;
+			float y = 29.95F;
+			float z = -54.03F;
 			float resetSpeed = 0.1F;
 			//Player cannot reset the ice block when standing where the ice block resets to.
 			if (player.transform.position.x > (x + 1.2) || player.transform.position.x < (x - 1.2) || player.transform.position.z > (z + 1.2) || player.transform.position.z < (z - 1.2))
