@@ -1,0 +1,107 @@
+=========================================================================================
+|				ZEUS GAME DOCUMENTATION					|
+|				   WRITTEN 2020 BY					| 
+|	  Parker Combs, Isaac Jensen, Alex Nelson, Dustin Nelson, Nick Twamley		|
+|											|
+|											|
+=========================================================================================
+
+=========================================================================================
+|				     TABLE OF CONTENTS					|
+-----------------------------------------------------------------------------------------
+|	I.   Getting set up								|
+|	II.  Project dependencies & requirements					|
+|	III. Upgrading project dependencies						|
+|	IV.  Game overview and controls							|
+|       V.   Known issues								|
+|	VI.  Things to implement in the future						|
+=========================================================================================
+
+*Last edited: May 10, 2020 by Parker Combs*
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I. GETTING SET UP
+
+Zeus Game is a 3D action-adventure game made in Unity under Dr. Marsh at the University of North Dakota. It has been in development since around 2013 across multiple
+different development teams. This documentation was created to assist future teams in getting the project set up and orienting themselves to how the game works.
+
+Before you access the game, you should have both the latest versions of Unity and Blender installed and verified to be working. The last versions of each that the project was built with
+are as follows. Please update the version numbers below as you upgrade the project:
+	Unity:		2019.3.10f1
+	Blender:	2.81a
+
+In terms of version control, GitHub is a good free option. The project will be fairly large with all its dependencies (over 13GB), so version control options like BitBucket 
+with size restrictions WILL NOT work!
+
+To access the project's dependencies from the Unity Asset Store, you must be logged in to Angie Reinhart's Unity account. Contact Angie or Dr. Marsh for more information.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+II. PROJECT DEPENDENCIES & REQUIREMENTS
+
+The project requires that a number of dependencies be installed on the developer's computer in order to the game to function correctly. 
+First, there are several assets that must be grabbed from the Unity Asset Store. These should all be able to to be accessed from Angie's Unity account.
+
+ABANDONED BUILDINGS:			https://assetstore.unity.com/packages/3d/environments/abandoned-buildings-62875
+AMPLIFY SHADER EDITOR:			https://assetstore.unity.com/packages/tools/visual-scripting/amplify-shader-editor-68570
+AURA 2 - VOLUMETRIC LIGHTING & FOG: 	https://assetstore.unity.com/packages/tools/particles-effects/aura-2-volumetric-lighting-fog-137148
+CHAINLINK FENCES:			https://assetstore.unity.com/packages/3d/chainlink-fences-73107
+CRASH CRATE:				https://assetstore.unity.com/packages/3d/props/industrial/crash-crate-161268
+DUMPSTER:				https://assetstore.unity.com/packages/3d/props/industrial/dumpster-655
+FLOODED GROUNDS: 			https://assetstore.unity.com/packages/3d/environments/flooded-grounds-48529
+FREE MEDIEVAL PROPS ASSET PACK:		https://assetstore.unity.com/packages/3d/props/free-medieval-props-asset-pack-131420
+GAIA 2 - TERRAIN & SCENE GENERATOR:	https://assetstore.unity.com/packages/tools/terrain/gaia-2-terrain-scene-generator-42618
+HQ AUTUMN DRY MAPLE TREES:		https://assetstore.unity.com/packages/3d/vegetation/trees/hq-autumn-dry-maple-trees-93117
+OLD BUILDING:				https://assetstore.unity.com/packages/3d/environments/industrial/old-building-70659
+OLD RADIO "ALPINIST:"			https://assetstore.unity.com/packages/3d/props/interior/old-radio-alpinist-72991
+ROCK AND BOULDERS 2:			https://assetstore.unity.com/packages/3d/props/exterior/rock-and-boulders-2-6947
+RPG/FPS GAME ASSETS FOR PC/MOBILE:	https://assetstore.unity.com/packages/3d/environments/industrial/rpg-fps-game-assets-for-pc-mobile-industrial-set-v2-0-86679
+SCI-FI STYLED MODULAR PACK:		https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-styled-modular-pack-82913
+SHED, TOOLS, BRIDGE AND FENCES:		https://assetstore.unity.com/packages/3d/props/shed-tools-bridge-and-fences-104216
+UNDERWORLD: CAVE ENVIRONMENT: 		https://assetstore.unity.com/packages/3d/environments/dungeons/underworld-cave-environment-10875
+YUGHUES FREE METAL MATERIALS:		https://assetstore.unity.com/packages/2d/textures-materials/metals/yughues-free-metal-materials-12949
+
+Additionally, make sure you have access to the "Parker Materials" folder - it contains modified materials from the above packs that are necessary for the game's objects to render correctly.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+III. UPGRADING PROJECT DEPENDENCIES
+
+The project should be upgraded to the newest version of Unity at the time to ensure continued support and stability.
+Blender should also be upgraded, as changes in Blender can affect how models are saved, which can cause them to not be loaded correctly in Unity.
+
+Each of the above asset store dependencies should have specific documentation to assist in upgrading them if needed.
+PROCEDURAL WORLDS (FOR GAIA 2 AND AURA 2) DOCUMENTATION: 	https://proceduralworlds.freshdesk.com/support/home
+AMPLIFY SHADER EDITOR DOCUMENTATION:				http://amplify.pt/unity/amplify-shader-editor/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IV. GAME OVERVIEW AND CONTROLS
+
+Levels
+=================================================================================
+| Level1									|
+| Level2									|
+| ForestClearing								|
+| IceCave									|
+| TimewornVillage								|
+| TeleportPuzzle								|
+| Level3 (deprecated, do not use)						|
+| TimeTrialLevel (deprecated, do not use)					|
+=================================================================================
+
+Game Controls (keyboard)
+=================================================================================
+| w		||	move forward						|
+| a		||	move left						|
+| s		||	move back						|
+| d		||	move right						|
+| e		||	interact						|
+| space		||	jump / hold to fly up (only in developer mode)		|
+| shift		||	hold to sprint						|
+| c		||	hold to crouch						|
+| r		||	reset ice block in Ice Cave level			|
+| F1		||	toggle developer mode					|
+| F2		||	kill player (only in developer mode)			|
+| f		||	hold to fly down (only in developer mode)		|
+| i		||	open inventory						|
+|										|
+===============================================================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
