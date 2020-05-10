@@ -19,8 +19,8 @@ public class Manager : MonoBehaviour
     private GameObject lastHoveredGameObject, inventoryPanel, HUD;
     private Animator handPanelAnimator;
     private bool inventoryShowing, toolEquipped, toolSelected;
-
-	void Start()
+    public bool DevToggle = false;
+    void Start()
     {
         mainMouseLook = Camera.main.GetComponent<MouseLook>();
         playerMouseLook = GameObject.Find("Player").GetComponent<MouseLook>();
@@ -119,7 +119,18 @@ public class Manager : MonoBehaviour
 		{
 			AudioSource.PlayClipAtPoint (TyJump, transform.position, 0.15f);
 		}
-	}
+
+        if (Input.GetButtonDown("DevMode"))
+            DevToggle = !DevToggle;
+
+        if (DevToggle && Input.GetButtonDown("DevKill"))
+        {
+            DevToggle = !DevToggle;
+            Kill();
+            DevToggle = !DevToggle;
+        }
+
+    }
 
     public bool IsInventoryShowing()
     {
@@ -165,6 +176,11 @@ public class Manager : MonoBehaviour
     {
         GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
         FindObjectOfType<menuDeath>().killPlayer();
+        if (!DevToggle)
+        {
+            GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
+            FindObjectOfType<menuDeath>().killPlayer();
+        }
     }
 
     void OnControllerColliderHit(ControllerColliderHit other)

@@ -16,6 +16,8 @@ public class CharacterMotor : MonoBehaviour
     // Does this script currently respond to input?
     bool canControl = true;
     bool useFixedUpdate = true;
+    public bool DevToggle = false;
+
 
     // For the next variables, [System.NonSerialized] tells Unity to not serialize the variable or show it in the inspector view.
     // Very handy for organization!
@@ -395,8 +397,61 @@ public class CharacterMotor : MonoBehaviour
 
     void Update()
     {
-        if(!useFixedUpdate)
+        if (!useFixedUpdate)
             UpdateFunction();
+
+        if (Input.GetButtonDown("DevMode"))
+        {
+            DevToggle = !DevToggle;
+            movement.velocity = Vector3.zero;
+        }
+
+        if (DevToggle)
+        {
+            movement.gravity = 0.0f;
+            Physics.IgnoreLayerCollision(0, 14, true);
+            Physics.IgnoreLayerCollision(1, 14, true);
+            Physics.IgnoreLayerCollision(2, 14, true);
+            Physics.IgnoreLayerCollision(3, 14, true);
+            Physics.IgnoreLayerCollision(4, 14, true);
+            Physics.IgnoreLayerCollision(5, 14, true);
+            Physics.IgnoreLayerCollision(6, 14, true);
+            Physics.IgnoreLayerCollision(7, 14, true);
+            Physics.IgnoreLayerCollision(8, 14, true);
+            Physics.IgnoreLayerCollision(9, 14, true);
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                Vector3 flyVector = new Vector3(0.0f, 4.0f, 0.0f);
+                movement.velocity += flyVector;
+            }
+
+            if (Input.GetButtonDown("Fall"))
+            {
+                Vector3 fallVector = new Vector3(0.0f, -4.5f, 0.0f);
+                movement.velocity += fallVector;
+            }
+
+
+            if (Input.GetButtonUp("Fall") || Input.GetButtonUp("Jump"))
+            {
+                movement.velocity.y = 0.0f;
+            }
+        }
+        else
+        {
+            movement.gravity = 9.81f;
+            Physics.IgnoreLayerCollision(0, 14, false);
+            Physics.IgnoreLayerCollision(1, 14, false);
+            Physics.IgnoreLayerCollision(2, 14, false);
+            Physics.IgnoreLayerCollision(3, 14, false);
+            Physics.IgnoreLayerCollision(4, 14, false);
+            Physics.IgnoreLayerCollision(5, 14, false);
+            Physics.IgnoreLayerCollision(6, 14, false);
+            Physics.IgnoreLayerCollision(7, 14, false);
+            Physics.IgnoreLayerCollision(8, 14, false);
+            Physics.IgnoreLayerCollision(9, 14, false);
+        }
     }
 
     private Vector3 ApplyInputVelocityChange(Vector3 velocity)
