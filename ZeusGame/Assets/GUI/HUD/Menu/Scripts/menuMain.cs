@@ -52,6 +52,17 @@ public class menuMain : MonoBehaviour {
 		"\tPlaytester",
 		"\tAdditional Controller Support",
 		"\tAdditional Objects and Functionality\n",
+		"Fourth team:\n",
+		"Alexander Nelson:",
+		"\tUpdate levels\n",
+		"Parker Combs:",
+		"\tUpdate levels\n",
+		"Isaac Jensen:",
+		"\tUpdate levels\n",
+		"Dustin Nelson:",
+		"\tUpdate levels\n",
+		"Nick Twamley:",
+		"\tUpdate levels\n",
 		"Special Thanks:\n",
 		"Kasie Kinzler:",
 		"\tArt Stills\n",
@@ -232,7 +243,7 @@ public class menuMain : MonoBehaviour {
 						Application.LoadLevel ("Transition");	//levSelect = 2, Load level 2
 						break;
 					case 3:
-						Application.LoadLevel ("level3Hub");	//levSelect = 3, Load Hub World
+						Application.LoadLevel ("ForestClearing");	//levSelect = 3, Load Hub World
 						break;
 					case 4:
 						Application.LoadLevel ("iceCave");		//levSelect = 4, Load Ice Caves
@@ -402,7 +413,7 @@ public class menuMain : MonoBehaviour {
 		}
         if (GUILayout.Button("Level 3"))						//Create a button that loads Hub World
         {
-            Application.LoadLevel("level3Hub");
+            Application.LoadLevel("ForestClearing");
         }
         if (GUILayout.Button("Ice Cave"))						//Create a button that loads Ice Cave
         {
