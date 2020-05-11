@@ -100,6 +100,7 @@ Game Controls (keyboard)
 | F2		||	kill player (only in developer mode)			|
 | f		||	hold to fly down (only in developer mode)		|
 | i		||	open inventory						|
+| q		||	close the hint page					|
 |										|
 ===============================================================================
 
