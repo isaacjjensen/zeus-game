@@ -80,7 +80,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 68d8b9eee8528634587bbf6d8d946c47,
         type: 3}
       propertyPath: m_Name
-      value: player model prefab
+      value: player model page prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 68d8b9eee8528634587bbf6d8d946c47,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68d8b9eee8528634587bbf6d8d946c47, type: 3}
