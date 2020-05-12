@@ -249,7 +249,7 @@ public class menuMain : MonoBehaviour {
 						Application.LoadLevel ("iceCave");		//levSelect = 4, Load Ice Caves
 						break;
 					case 5:
-						Application.LoadLevel ("TimeTrialLevel"); //levSelect = 5, Load Time Trial
+						Application.LoadLevel ("TimewornVillage"); //levSelect = 5, Load Time Trial
 						break;
 					case 6:
 						Application.LoadLevel ("TeleportPuzzle"); //levSelect = 6, Load  Teleporter
