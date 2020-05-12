@@ -30,11 +30,14 @@ public class HeatRayBeam : MonoBehaviour
                                 + beamOffset.y * gameObject.transform.right.z
                                 + beamOffset.z * gameObject.transform.up.z
                 );
-            Transform cameraTransform = GameObject.Find("MainCamera").transform;
-            Physics.Raycast(cameraTransform.position, cameraTransform.right, out hitInfo);
+            Physics.Raycast(beamPositions[0], gameObject.transform.right, out hitInfo);
             beamPositions[1] = hitInfo.point;
             gameObject.transform.Find("Particle System Smoke").gameObject.transform.position = beamPositions[1];
             gameObject.GetComponent<LineRenderer>().SetPositions(beamPositions);
+            if (hitInfo.collider.gameObject.GetComponent<Melt>() != null)
+            {
+                hitInfo.collider.gameObject.GetComponent<Melt>().Melting();
+            }
         } else if (gameObject.GetComponent<LineRenderer>().enabled)
         {
             gameObject.GetComponent<LineRenderer>().enabled = false;
