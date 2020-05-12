@@ -55,7 +55,7 @@ public class TimeSpot : MonoBehaviour
             isTriggered = true;
             if (isOneTimeTrigger)
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                gameObject.SetActive(false);
             }
             return true;
         }
