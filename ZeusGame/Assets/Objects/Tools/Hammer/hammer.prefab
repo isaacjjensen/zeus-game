@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8825914218266830810}
   - component: {fileID: 5961414214004710245}
   - component: {fileID: 8077109092390737094}
+  - component: {fileID: 394941234443417673}
   m_Layer: 9
   m_Name: hammer
   m_TagString: Untagged
@@ -70,6 +71,21 @@ MonoBehaviour:
   toolName: Sledge Hammer
   toolPosition: {x: 0.8, y: 0.5, z: -0.9}
   toolOrientation: {x: 90, y: 140, z: 0}
+  breakableLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &394941234443417673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134855219397574051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36b90306bee1ee43a1c5b64a9703bef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4264217617623062556
 GameObject:
   m_ObjectHideFlags: 0

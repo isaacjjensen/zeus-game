@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Frozen Cavern
-  totalCount: 22
+  totalCount: 13
   type: 3
   image: {fileID: 21300000, guid: 37c83a9f380450f43ac4943092dad9ac, type: 3}
 --- !u!1 &966483002502364404
@@ -1987,7 +1987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Ancient Ruins II
-  totalCount: 22
+  totalCount: 7
   type: 1
   image: {fileID: 21300000, guid: 0b48d12cf9b7a2042b4fd345e4594632, type: 3}
 --- !u!1 &2168934879803789768
@@ -2338,7 +2338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Space-Torn Station
-  totalCount: 22
+  totalCount: 16
   type: 5
   image: {fileID: 21300000, guid: c4b46a2e08814194a96e6306b59d85cb, type: 3}
 --- !u!1 &2721042038886440088
@@ -6427,7 +6427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Ancient Ruins I
-  totalCount: 22
+  totalCount: 13
   type: 0
   image: {fileID: 21300000, guid: 4a873b405fbb22d4e9c57a8ebe996fd7, type: 3}
 --- !u!1 &7003696131337632039
@@ -6973,7 +6973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Forest Clearing
-  totalCount: 22
+  totalCount: 27
   type: 2
   image: {fileID: 21300000, guid: 899f5333a17ac4f428bc135411ea2574, type: 3}
 --- !u!1 &7356377223811029061

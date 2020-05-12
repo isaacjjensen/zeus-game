@@ -6,6 +6,11 @@ public class Hammer : Tool
 {
     public override void action()
     {
-        gameObject.GetComponent<Animator>().SetTrigger("UseTrigger");
+        if (!gameObject.GetComponent<Animator>().GetBool("IsUsing"))
+        {
+            gameObject.GetComponent<Animator>().SetTrigger("UseTrigger");
+
+            gameObject.GetComponent<HammerBreak>().ScheduleImpact();
+        }
     }
 }
