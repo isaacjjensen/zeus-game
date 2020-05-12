@@ -9,7 +9,8 @@ public class SpaceSlicer : Tool
         if (!gameObject.GetComponent<Animator>().GetBool("IsUsing"))
         {
             gameObject.GetComponent<Animator>().SetTrigger("UseTrigger");
-            print("Slice! Slice!");
+
+            gameObject.GetComponent<SpaceSlice>().ScheduleSlice();
         }
     }
 }

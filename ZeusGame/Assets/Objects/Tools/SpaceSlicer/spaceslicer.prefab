@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 4109647992133850524}
   - component: {fileID: 1229048209654447694}
   - component: {fileID: 5808676222387749714}
+  - component: {fileID: 961476769001437390}
   m_Layer: 9
   m_Name: spaceslicer
   m_TagString: Untagged
@@ -541,6 +542,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f4e9c96aca40134bb8dd60d3b6d2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &961476769001437390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642336261337451247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085097af652bca94ab0204e522a7bbd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!74 &900743842753797221
