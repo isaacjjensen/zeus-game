@@ -426,9 +426,9 @@ public class menuMain : MonoBehaviour {
         {
             Application.LoadLevel("iceCave");
         }
-        if (GUILayout.Button("Time Trial Level"))				//Create a button that loads Time Trial
+        if (GUILayout.Button("Timeworn Village"))				//Create a button that loads Time Trial
         {
-            Application.LoadLevel("TimeTrialLevel");
+            Application.LoadLevel("TimewornVillage");
         }
         if (GUILayout.Button("Teleporter Level"))				//Create a button that loads the Teleporter
         {
