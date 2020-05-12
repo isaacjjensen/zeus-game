@@ -17,8 +17,7 @@ public class CharacterMotor : MonoBehaviour
     bool canControl = true;
     bool useFixedUpdate = true;
     public bool DevToggle = false;
-
-
+    
     // For the next variables, [System.NonSerialized] tells Unity to not serialize the variable or show it in the inspector view.
     // Very handy for organization!
 
@@ -43,14 +42,18 @@ public class CharacterMotor : MonoBehaviour
         }
     }
 
+
     [System.Serializable]
     public class CharacterMotorMovement
     {
+
         // The maximum horizontal speed when moving
         public float maxForwardSpeed = 10.0f;
         public float maxSprintSpeed = 6.0f;
         public float maxSidewaysSpeed = 3.0f;
         public float maxBackwardsSpeed = 2.0f;
+
+        
 
         // Curve for multiplying speed based on slope(negative = downwards)
         public AnimationCurve slopeSpeedMultiplier = new AnimationCurve(new Keyframe(-90, 1), new Keyframe(0, 1), new Keyframe(90, 0));
@@ -84,10 +87,36 @@ public class CharacterMotor : MonoBehaviour
 
         [System.NonSerialized]
         public Vector3 lastHitPoint = new Vector3(Mathf.Infinity, 0, 0);
+        
+        public void setSpeed()
+        {
+            if (menuMain.hard)
+            {
+                maxForwardSpeed = 10.0f;
+                maxSprintSpeed = 6.0f;
+                maxSidewaysSpeed = 3.0f;
+                maxBackwardsSpeed = 2.0f;
+            }
+            if (menuMain.easy)
+            {
+                maxForwardSpeed = 12.0f;
+                maxSprintSpeed = 7.0f;
+                maxSidewaysSpeed = 4.0f;
+                maxBackwardsSpeed = 3.0f;
+            }
+            else
+            {
+                maxForwardSpeed = 10.0f;
+                maxSprintSpeed = 7.0f;
+                maxSidewaysSpeed = 3.0f;
+                maxBackwardsSpeed = 2.0f;
+            }
+
+        }
     }
 
     public CharacterMotorMovement movement = new CharacterMotorMovement();
-
+    
     // We will contain all the jumping related variables in one helper class for clarity.
     [System.Serializable]
     public class CharacterMotorJumping
@@ -228,6 +257,7 @@ public class CharacterMotor : MonoBehaviour
             inputSprint = false;
 
         // We copy the actual velocity into a temporary variable that we can manipulate.
+        
         Vector3 velocity = movement.velocity;
 
         // Update velocity based on input

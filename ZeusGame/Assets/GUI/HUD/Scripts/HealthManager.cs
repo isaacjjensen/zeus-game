@@ -13,9 +13,25 @@ public class HealthManager : MonoBehaviour
     {
         lifeCountText = gameObject.transform.Find("LifeCount").GetComponent<Text>();
 
-        if (lifeCount == 0) // Default life count is 5
+        //if (lifeCount == 0) // Default life count is 5
+        //{
+        //    lifeCount = 5;
+        //}
+		 if (menuMain.hard == true) // Default life count is 5
         {
             lifeCount = 5;
+        }
+        if (menuMain.meduim == true) // Default life count is 5
+        {
+            lifeCount = 10;
+        }
+        if (menuMain.easy == true) // Default life count is 5
+        {
+            lifeCount = 20;
+        }
+        if (lifeCount == 0) // Default life count is 5
+        {
+            lifeCount = 15;
         }
 
         updateLifeCount();

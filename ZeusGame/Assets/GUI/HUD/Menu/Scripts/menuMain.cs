@@ -135,11 +135,14 @@ public class menuMain : MonoBehaviour {
 	public static string time1;
 	public static string time2;
 	public static string health;
-
+    public static bool hard = false ;
+    public static bool meduim = false;
+    public static bool easy = false;
+    
 	Vector2 scrollPosition;					//current position of the scroll wheel
 
 	public enum Page {						//Pages available through the main menu
-		Main, Levels, Credits, Controls
+		Main, Levels, Difficulty, Credits, Controls
 	}
 	
 	private Page currentPage;
@@ -156,7 +159,7 @@ public class menuMain : MonoBehaviour {
 		score = "000000";
 		time1 = "00:00";
 		time2 = "00:00";
-		health = "5";
+        health = "5";
 		levSelect = 1;									//what level select option the user is on
 		numSelect = 1;									//what main menu option the user is on
 		maxNumSelect = 5;								//number of items on the main menu
@@ -197,7 +200,7 @@ public class menuMain : MonoBehaviour {
 					case 2:
 						currentPage = Page.Levels;				//numSelect = 2, Go to levels menu page
 						break;
-					case 3:
+                    case 3:
 						currentPage = Page.Controls;			//numSelect = 3, Go to controls menu page
 						break;
 					case 4:
@@ -327,7 +330,10 @@ public class menuMain : MonoBehaviour {
 			case Page.Controls:
 				ShowControls();
 				break;
-			case Page.Levels:
+            case Page.Difficulty:
+                ShowDifficulty();
+                break;
+            case Page.Levels:
 				ShowLevels();
 				break;
 		} 
@@ -399,11 +405,12 @@ public class menuMain : MonoBehaviour {
 	}
 
 
+    
 
 
-	//-----------------------------------------------------------------------------------------------------
-	//This shows the GUI for the levels page
-	void ShowLevels() {
+    //-----------------------------------------------------------------------------------------------------
+    //This shows the GUI for the levels page
+    void ShowLevels() {
 		BeginPage (200, 200);									//Create a 200x200 window in the middle of the screen
 		if (GUILayout.Button ("Level 1")) {						//Create a button that loads level 1
 			Application.LoadLevel ("Introduction");
@@ -545,13 +552,45 @@ public class menuMain : MonoBehaviour {
 																//Draw the menuSelector on the back button
 		}
 	}
-	
+
+    /// <summary>
+    /// Added show difficulty page
+    /// </summary>
+  
+
+    void ShowDifficulty()
+    {
+       
+        GUI.color = Color.white;
+        GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+        
+        BeginPage(200, 200);    //Create a 200x200 window in the middle of the screen
+
+        if (GUILayout.Button("Easy"))
+        {                       //Create a button that selects an easier difficulty
+            easy = true; 
+            
+            Application.LoadLevel("Introduction");
+        }
+        if (GUILayout.Button("Medium"))
+        {                       //Create a button that selects a meduim difficulty
+            meduim = true;
+          
+            Application.LoadLevel("Introduction");
+        }
+        if (GUILayout.Button("Hard"))
+        {                       //Create a button that selects a challenging difficulty
+            hard = true;
+           
+            Application.LoadLevel("Introduction");
+        }
+        EndPage();
+    }
 
 
-
-	//-----------------------------------------------------------------------------------------------------
-	//Contains the GUI for the main menu
-	void MainMenu() {
+    //-----------------------------------------------------------------------------------------------------
+    //Contains the GUI for the main menu
+    void MainMenu() {
 		BeginPage(200,200);										//Create a 200x200 area on the screen
 		if (GUILayout.Button ("Start Game")) {					//Create a buttons that loads level 1
 			Application.LoadLevel ("Introduction"); 
@@ -559,7 +598,11 @@ public class menuMain : MonoBehaviour {
 		if (GUILayout.Button ("Level Select")) {				//Create a button that goes to level select menu
 			currentPage = Page.Levels;
 		}
-		if (GUILayout.Button ("Controls")) {					//Create a button that goes to controls menu
+        if (GUILayout.Button("Difficulty"))
+        {                                                       //Create a button that goes to difficulty select menu
+            currentPage = Page.Difficulty;
+        }
+        if (GUILayout.Button ("Controls")) {					//Create a button that goes to controls menu
 			currentPage = Page.Controls;
 		}
 		if (GUILayout.Button ("Credits")) {						//Create a button that goes to credits menu
