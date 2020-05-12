@@ -3,7 +3,7 @@ using System.Collections;
 //Editted by Jordan Hoffman to rotate player when coming out of some of the portals
 public class Teleport : MonoBehaviour {
     public Transform exit;
-    public Material defaultMaterial;
+    private Material defaultMaterial;
     public Material portalMaterial;
 	private CharacterMotor player;
     private bool isOpen = false;
@@ -39,6 +39,7 @@ public class Teleport : MonoBehaviour {
     {
         print("Opening Portal");
         isOpen = true;
+        defaultMaterial = gameObject.GetComponent<MeshRenderer>().material;
         gameObject.GetComponent<MeshRenderer>().material = portalMaterial;
     }
 
