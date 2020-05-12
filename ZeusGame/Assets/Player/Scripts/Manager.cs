@@ -43,29 +43,29 @@ public class Manager : MonoBehaviour
         // Interaction
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hitInfo, interactDistance, interactableLayerMask))
         {
-            if (hitInfo.collider.gameObject != null)
-            {
-                hitInfo.collider.gameObject.GetComponent<Interactable>().OnHover();
-            }
+            //if (hitInfo.collider.gameObject != null)
+            //{
+            //    hitInfo.collider.gameObject.GetComponent<Interactable>().OnHover();
+            //}
 
-            if (lastHoveredGameObject != null && hitInfo.collider.gameObject != lastHoveredGameObject)
-            {
-                lastHoveredGameObject.GetComponent<Interactable>().OnHoverExit();
-                lastHoveredGameObject = hitInfo.collider.gameObject;
-            } else if (lastHoveredGameObject == null)
-            {
-                lastHoveredGameObject = hitInfo.collider.gameObject;
-            }
+            //if (lastHoveredGameObject != null && hitInfo.collider.gameObject != lastHoveredGameObject)
+            //{
+            //    lastHoveredGameObject.GetComponent<Interactable>().OnHoverExit();
+            //    lastHoveredGameObject = hitInfo.collider.gameObject;
+            //} else if (lastHoveredGameObject == null)
+            //{
+            //    lastHoveredGameObject = hitInfo.collider.gameObject;
+            //}
             
             if (Input.GetButtonDown("Interact"))
             {
                 hitInfo.transform.gameObject.GetComponent<Interactable>().Interact(this.playerCamera.GetComponentInChildren<Rigidbody>().transform);
             }
-        } else if (lastHoveredGameObject != null)
-        {
-            lastHoveredGameObject.GetComponent<Interactable>().OnHoverExit();
-            lastHoveredGameObject = null;
-        }
+        } //else if (lastHoveredGameObject != null)
+        //{
+        //    lastHoveredGameObject.GetComponent<Interactable>().OnHoverExit();
+        //    lastHoveredGameObject = null;
+        //}
   
         // Inventory
         if (Input.GetButtonDown("Inventory"))

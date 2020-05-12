@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Melt : MonoBehaviour
 {
-    private float meltRate = 0.001f;
+    private float meltRate = 0.0025f;
 
     public void Melting()
     {
