@@ -2482,6 +2482,8 @@ MonoBehaviour:
   toolName: 
   toolPosition: {x: 0.6, y: 0.3, z: -0.2}
   toolOrientation: {x: -3, y: 105, z: -15}
+  defaultProfile: {fileID: 11400000, guid: 458a785a6015cab42a3600292db797a5, type: 2}
+  timeProfile: {fileID: 11400000, guid: 39bce321fff9f1e488f20146aa49b19e, type: 2}
 --- !u!1 &7141591289350007421
 GameObject:
   m_ObjectHideFlags: 0

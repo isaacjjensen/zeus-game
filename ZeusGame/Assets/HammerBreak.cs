@@ -6,7 +6,7 @@ public class HammerBreak : MonoBehaviour
 {
     private Camera toolCamera;
     private RaycastHit hitInfo;
-    private float interactDistance = 2.0f;
+    private float interactDistance = 3.0f;
     private float delay = 0.45f;
     private LayerMask breakableLayerMask;
 
